@@ -1,0 +1,17 @@
+CASE
+When DenormOrgUnit.Field999 IN (1291, 1296) THEN 'Disputanta'
+When DenormOrgUnit.Field999 IN (1280,1281,1297) THEN 'Edwardsville'
+When DenormOrgUnit.Field999 IN (1282,1298) THEN 'Fort Lauderdale'
+When DenormOrgUnit.Field999 IN (1287,1299,1624) THEN 'Greenville'
+When DenormOrgUnit.Field999 IN (1278,1300) THEN 'Independence'
+When DenormOrgUnit.Field999 IN (1279,1286,1293) THEN 'Lewisville'
+When DenormOrgUnit.Field999 IN (1285,1288,1295) THEN 'Long Island City'
+When DenormOrgUnit.Field999 IN (1283,1301) THEN 'Mishawaka'
+When DenormOrgUnit.Field999 IN (1284,1732) THEN 'Sales'
+When DenormOrgUnit.Field999 IN (1289,1730,1625) THEN 'Training Center'
+When DenormOrgUnit.Field999 IN (1277) THEN 'CAN-Unimotor'
+When DenormOrgUnit.Field999 IN (1290) THEN 'CAN-Blue Streak'
+When DenormOrgUnit.Field999 IN (1580) THEN 'Board of Directors'
+When DenormOrgUnit.Field999 IN (1807) THEN 'Sheboygan Falls'
+When DenormOrgUnit.Field999 IN (1808) THEN 'Milwaukee'
+END
