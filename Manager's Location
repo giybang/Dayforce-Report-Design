@@ -1,0 +1,5 @@
+(Select l.shortname from OrgUnit l (nolock)
+inner join employeeworkassignment ewa (nolock) on l.OrgUnitId = ewa.OrgUnitId
+where ewa.employeeid = ( select top 1 ManagerId from employeeManager (nolock) where employeeid = max(Employee.employeeid) And effectiveend is null order by EffectiveStart DESC) 
+and ewa.isprimary = 1 and ewa.effectiveend is null
+)
