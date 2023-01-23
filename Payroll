@@ -1,0 +1,14 @@
+YTD Earnings
+
+CASE 
+WHEN PRPayRunRegister.RecordTypeCodeName='Earning' 
+  AND PRPayRunRegister.ImpactsNetPay='True'      
+THEN PRPayRunRegister.PayRunAmountYTD
+  ELSE 0.00  END
+
+CASE 
+WHEN PREarning.ShortName = 'REGULAR' THEN PRPayRunRegister.PayRunAmountYTD
+Else 0.00
+END
+
+
